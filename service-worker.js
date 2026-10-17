@@ -1,11 +1,23 @@
-const CACHE_NAME = "programme-major-v6-da";
+const CACHE_NAME = "programme-major-v7-da";
 const APP_SHELL = [
   "./",
   "./index.html",
   "./manifest.json",
   "./icon.svg",
   "./icon-192.png",
-  "./icon-512.png"
+  "./icon-512.png",
+  "./img/bornwin.jpg",
+  "./img/bulles.jpg",
+  "./img/cherry.png",
+  "./img/dahlia.jpg",
+  "./img/doree.jpg",
+  "./img/fractale.jpg",
+  "./img/mosaique.jpg",
+  "./img/msn.jpg",
+  "./img/nuit.jpg",
+  "./img/orchidee.jpg",
+  "./img/snoopy.jpg",
+  "./img/vitrail.jpg"
 ];
 
 self.addEventListener("install", event => {
