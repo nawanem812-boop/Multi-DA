@@ -1,4 +1,4 @@
-const CACHE_NAME = "programme-major-v8-da";
+const CACHE_NAME = "programme-major-v9-da";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -16,6 +16,7 @@ const APP_SHELL = [
   "./img/mosaique.jpg",
   "./img/msn.jpg",
   "./img/nuit.jpg",
+  "./img/orchidee.jpg",
   "./img/snoopy.jpg",
   "./img/vitrail.jpg"
 ];
