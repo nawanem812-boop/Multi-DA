@@ -1,4 +1,4 @@
-const CACHE_NAME = "programme-major-v9-da";
+const CACHE_NAME = "programme-major-v10-da";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -8,22 +8,14 @@ const APP_SHELL = [
   "./icon-512.png",
   "./img/bornwin.jpg",
   "./img/cherry.png",
-  "./img/craie.jpg",
   "./img/dahlia.jpg",
-  "./img/doree.jpg",
-  "./img/fractale.jpg",
-  "./img/kitty.jpg",
-  "./img/mosaique.jpg",
   "./img/msn.jpg",
-  "./img/nuit.jpg",
-  "./img/orchidee.jpg",
-  "./img/snoopy.jpg",
   "./img/vitrail.jpg"
 ];
 
 self.addEventListener("install", event => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then(cache => cache.addAll(APP_SHELL))
+    caches.open(CACHE_NAME).then(cache => Promise.all(APP_SHELL.map(u => cache.add(u).catch(() => null))))
   );
   self.skipWaiting();
 });
