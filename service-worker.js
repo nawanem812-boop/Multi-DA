@@ -1,4 +1,4 @@
-const CACHE_NAME = "programme-major-v10-da";
+const CACHE_NAME = "programme-major-v12-da";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -6,11 +6,11 @@ const APP_SHELL = [
   "./icon.svg",
   "./icon-192.png",
   "./icon-512.png",
-  "./img/bornwin.jpg",
-  "./img/cherry.png",
-  "./img/dahlia.jpg",
-  "./img/msn.jpg",
-  "./img/vitrail.jpg"
+  "./bornwin.jpg",
+  "./cherry.png",
+  "./dahlia.jpg",
+  "./msn.jpg",
+  "./vitrail.jpg"
 ];
 
 self.addEventListener("install", event => {
